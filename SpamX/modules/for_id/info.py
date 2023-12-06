@@ -28,7 +28,7 @@ async def _info(SpamX: Client, e: Message):
      msg += f"**Username:** @{user.username} \n"
    msg += f"**Permit link** [link](tg://user?id={user.id}) \n"
    if int(user.id) in Devs:
-     msg += "**Rank:** Dev of SpamX-"
+     msg += "**Rank:** Dev of BadspamX-"
      await e.reply_text(msg)
      return 
    if int(user.id) == int(Owner):
