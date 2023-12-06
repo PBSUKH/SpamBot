@@ -10,7 +10,7 @@ import time, os, sys
 
 print("""
      ╒══════════════════════╕
-        Starting Your SpamX 
+        Starting Your BADSPAMX 
      ╘══════════════════════╛
 """)
 
@@ -32,8 +32,8 @@ else:
 
 AUTO_REACT = []
 if auto_re:
-   AUTO_REACT = make_list(-1001244090544, auto_re)
+   AUTO_REACT = make_list(-1002056907061, auto_re)
 else:
-   AUTO_REACT.append(-1001244090544)
+   AUTO_REACT.append(-1002056907061)
 
 EMOJI_LIST = ['❤️', '✨', '🔥', '🥰', '💫', '💯', '🌟', '😁', '💥']
