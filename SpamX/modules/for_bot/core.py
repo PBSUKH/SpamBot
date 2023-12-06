@@ -43,7 +43,7 @@ async def ping_me(_, e: Message):
 @Client.on_message(filters.user(Owner) & filters.command(["getvars", "getvar"], prefixes=handler))
 @Client.on_message(filters.me & filters.command(["getvars", "getvar"], prefixes=handler))
 async def all_vars(_, message: Message):
-    await message.reply_text(f"All Variables given below 👇\n\n {Variables_text} \n\n © @RiZoeLX")
+    await message.reply_text(f"All Variables given below 👇\n\n {Variables_text} \n\n © @II_BAD_MUNDA_II")
 
 @Client.on_message(filters.user(Sudos) & filters.command(["restart", "reboot"], prefixes=handler))
 @Client.on_message(filters.me & filters.command(["restart", "reboot"], prefixes=handler))
@@ -54,7 +54,7 @@ async def restarter(SpamX: Client, message: Message):
    except Exception as error:
      print(str(error))
 
-   args = [sys.executable, "-m", "SpamX"]
+   args = [sys.executable, "-m", "BadspamX"]
    os.execl(sys.executable, *args)
    quit()
    
@@ -74,7 +74,7 @@ async def welcome_watcher(SpamX: Client, member: ChatMemberUpdated):
    user = member.new_chat_member.user if member.new_chat_member else member.from_user    
    if group_welcome:
       if user.id == mai.id:
-         await SpamX.send_message(message.chat.id, "SpamX Here. Powered by @RiZoeLX!")
+         await SpamX.send_message(message.chat.id, "BadspamX Here. Powered by @II_BAD_MUNDA_II")
          return
       if user.id == Owner:
          await SpamX.send_message(message.chat.id, f"{user.mention} Welcome to {message.chat.title} my King 👑")
@@ -111,7 +111,7 @@ async def Update_SpamX(SpamX: Client, message: Message):
       await message.reply_text(str(e))
       return
    await message.reply_text("**Updated with main branch, restarting now.**")
-   args = [sys.executable, "-m", "SpamX"]
+   args = [sys.executable, "-m", "BadspamX"]
    os.execl(sys.executable, *args)
    quit()
 
@@ -126,16 +126,17 @@ async def os_system(SpamX: Client, message: Message):
        if check_var in Variables:
           var = check_var
        else:
-          await message.reply_text(f"Wrong variable! All Variables given below 👇\n\n {Variables_text} \n\n © @RiZoeLX")
+          await message.reply_text(f"Wrong variable! All Variables given below 👇\n\n {Variables_text} \n\n © @II_BAD_MUNDA_II")
           return
        value = str(txt[1])
        try:
          os.system(f"dotenv set {var} {value}")
          await message.reply_text("success ✓ wait for re-start")
-         args = [sys.executable, "-m", "SpamX"]
+         args = [sys.executable, "-m", "BadspamX"]
          os.execl(sys.executable, *args)
          quit()
        except Exception as error:
          await message.reply_text(f"Error: {error} \n\n Report in @DNHxHELL")
     else:
        await message.reply_text(f"**Wrong Usage** \n Syntax: {handler}setvar (var name) (value) \n\n Type `{handler}getvars` To get all Vars name!")
+            
