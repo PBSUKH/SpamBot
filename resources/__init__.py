@@ -91,7 +91,7 @@ HNDLR=
 def SpamX_Setup():
     os.system("pip3 install python-dotenv[cli]")
     clear()
-    print(f'    {white}SpamX Version: v0.5 \n    {white}By RiZoeX')
+    print(f'    {white}Badspamx Version: v0.5 \n    {white}By RiZoeX')
     
     time.sleep(2)
     api_id = input(f"{ask}Enter API_ID: ")
@@ -250,12 +250,12 @@ def recheck():
 
 def get_start():
     clear(fast=True)
-    question = input(f"{ask}Wanna start SpamX Now?: y/n: ")
+    question = input(f"{ask}Wanna start BadspamX Now?: y/n: ")
     if question.lower() == "y":
         os.system("pip3 install python-dotenv")
-        os.system("python3 -m SpamX")
+        os.system("python3 -m BadspamX")
     elif question.lower() == "n":
-        print(f"\n{info}Nevermind !! You Can Start It Later With by using; python3-m SpamX\n")
+        print(f"\n{info}Nevermind !! You Can Start It Later With by using; python3-m BadspamX\n")
         exit(2)
     else:
         os.system("clear")
