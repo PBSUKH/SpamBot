@@ -54,7 +54,7 @@ async def addsudo(SpamX: Client, message: Message):
           return
        users_db.rmsudo(user.id)
        await message.reply_text(f"User {user.mention} successfully removed from Sudo! \n\nWait for re-start ✓")
-       args = [sys.executable, "-m", "SpamX"]
+       args = [sys.executable, "-m", "BadspamX"]
        os.execl(sys.executable, *args)
        quit()
     else:
@@ -67,7 +67,7 @@ async def addsudo(SpamX: Client, message: Message):
 @Client.on_message(filters.user(Sudos) & filters.command(["sudos", "sudolist"], prefixes=handler))
 @Client.on_message(filters.me & filters.command(["sudos", "sudolist"], prefixes=handler))
 async def sudolist(SpamX: Client, message: Message):
-    sudo_reply = "**Sudo users list - SpamX** \n\n"
+    sudo_reply = "**Sudo users list - BadspamX** \n\n"
     if DATABASE_URL:
        data = users_db.get_all_sudos()
        for x in data:
@@ -84,3 +84,4 @@ async def sudolist(SpamX: Client, message: Message):
           except:
              sudo_reply += f" × [{x}](tg://user?id={x}) \n"
     await message.reply_text(sudo_reply)
+    
