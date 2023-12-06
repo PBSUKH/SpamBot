@@ -34,7 +34,7 @@ sudo apt install screen
 <b>3) clone repo and open dictionary </b>
 
 ```python
-git clone https://github.com/RiZoeLX/SpamX && cd SpamX
+git clone https://github.com/badmunda98/Badspamx && cd SpamX
 ```
 
 <b>4) Install requirements </b>
