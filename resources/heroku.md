@@ -3,7 +3,7 @@
 > The easy way to host this bot, deploy to Heroku 
 <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/badmunda98/Badspamx)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/RiZoeLX/SpamX)
 
 <h3>Tutorial video</h3>
 <br>
