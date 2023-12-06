@@ -40,14 +40,14 @@ async def alive_me(SpamX: Client, message: Message):
              caption=Alive.msg)
 
 
-@Client.on_message(filters.user(Sudos) & filters.command(["SpamX", "Spamx", "spamx"], prefixes=handler))
-@Client.on_message(filters.me & filters.command(["SpamX", "Spamx", "spamx"], prefixes=handler))
+@Client.on_message(filters.user(Sudos) & filters.command(["BadpamX", "Badspamx", "badspamx"], prefixes=handler))
+@Client.on_message(filters.me & filters.command(["BadspamX", "Badspamx", "badspamx"], prefixes=handler))
 async def SpamX_(SpamX: Client, message: Message):
     user = message.from_user
     Mai = await SpamX.get_me()
     chat = message.chat
     info = await message.reply_text("processing......")
-    spamx_reply = "**__SpamX by RiZoeLX;__** \n\n"
+    spamx_reply = "**__SpamX by BADMUNDA;__** \n\n"
     spamx_reply += "<=======================> \n"
 
     try:
@@ -106,8 +106,8 @@ async def SpamX_(SpamX: Client, message: Message):
        spamx_reply += f"**Total Sudos:** `{users_db.sudo_count()}` \n"
        spamx_reply += f"**Total Gbanned users:** `{gban_db.gban_count()}` \n"
     spamx_reply += "<=======================> \n\n"
-    spamx_reply += "**Source Code:** [GitHub 🐈‍⬛](https://github.com/RiZoeLX/SpamX) \n\n"
-    spamx_reply += "**© @RiZoeLX** || Support: @DNHxHELL"
+    spamx_reply += "**Source Code:** [GitHub 🐈‍⬛](https://t.me/THE_DRAMA_CLUB_01) \n\n"
+    spamx_reply += "**© @II_BAD_MUNDA_II** || Support: https://t.me/THE_DRAMA_CLUB_01"
     
     try:
        await info.edit_text(spamx_reply, disable_web_page_preview=True)
