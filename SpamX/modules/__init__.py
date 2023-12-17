@@ -9,7 +9,7 @@ __version__ = __version__
 
 
 ping_msg = PING_MSG if PING_MSG else "BadspamX"
-pic = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/e25a563619c653328830d.jpg"
+pic = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/db0dd26fce28950c46e20.mp4"
 amsg = ALIVE_MSG if ALIVE_MSG else "BADSPAMX - by BADMUNDA"
 
 try:
@@ -32,7 +32,7 @@ class Alive:
 ➠ **pyRiZoeLX Version:** `{pip_vr}`
 ➠ **Group:** @THE_DRAMA_CLUB_01
 ━───────╮•╭───────━
-➠ **Source Code:** [•Repo•](https://t.me/ll_BAD_MUNDA_01_ll)
+➠ **Source Code:** [•Repo•](https://t.me/ll_THE_BAD_BOT_ll)
      """
 
 handler = HNDLR
